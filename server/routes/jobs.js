@@ -8,6 +8,7 @@ const router = express.Router();
 const JobSchema = z.object({
   title: z.string().min(2),
   company: z.string().min(2),
+  image: z.string().url().optional().or(z.literal("")),
   location: z.string().default(""),
   salary: z.string().default(""),
   description: z.string().default(""),

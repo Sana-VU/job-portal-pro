@@ -17,7 +17,7 @@ router.post('/', requireAuth, async (req, res) => {
   const job = await Job.findById(parsed.data.jobId)
   if (!job) return res.status(404).json({ message: 'Job not found' })
   const app = await Application.create({ job: job._id, user: req.user.id, coverLetter: parsed.data.coverLetter || '' })
-  res.json(app)
+  res.status(201).json(app)
 })
 
 router.get('/mine', requireAuth, async (req, res) => {

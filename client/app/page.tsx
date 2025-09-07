@@ -19,14 +19,12 @@ export default function HomePage() {
               href="/jobs"
               className="btn bg-white text-blue-600 hover:bg-blue-50 shadow-xl hover:shadow-2xl"
             >
-              <span className="mr-2">🔍</span>
               Browse Jobs
             </Link>
             <Link
               href="/register"
               className="btn btn-outline border-white text-white hover:bg-white hover:text-blue-600"
             >
-              <span className="mr-2">📝</span>
               Post a Job
             </Link>
           </div>
@@ -64,24 +62,9 @@ export default function HomePage() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {[
-            {
-              icon: "🎯",
-              title: "Smart Matching",
-              description:
-                "Our AI-powered algorithm matches you with the perfect job opportunities based on your skills and preferences.",
-            },
-            {
-              icon: "⚡",
-              title: "Quick Apply",
-              description:
-                "Apply to multiple jobs with just one click. Save time and increase your chances of landing interviews.",
-            },
-            {
-              icon: "📊",
-              title: "Analytics Dashboard",
-              description:
-                "Track your application progress, view detailed insights, and optimize your job search strategy.",
-            },
+            { icon: "✨", title: "Smart Matching", description: "Our AI-powered algorithm matches you with the perfect job opportunities based on your skills and preferences." },
+            { icon: "⚡", title: "Quick Apply", description: "Apply to multiple jobs with just one click. Save time and increase your chances of landing interviews." },
+            { icon: "📊", title: "Analytics Dashboard", description: "Track your application progress, view detailed insights, and optimize your job search strategy." },
           ].map((feature, i) => (
             <div className="feature-card" key={i}>
               <div className="text-4xl mb-4">{feature.icon}</div>
@@ -107,11 +90,9 @@ export default function HomePage() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/register" className="btn btn-primary">
-            <span className="mr-2">🚀</span>
             Get Started Free
           </Link>
           <Link href="/jobs" className="btn btn-ghost">
-            <span className="mr-2">👀</span>
             Explore Jobs
           </Link>
         </div>
@@ -119,3 +100,4 @@ export default function HomePage() {
     </div>
   );
 }
+

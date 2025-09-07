@@ -21,7 +21,6 @@ export default function Navbar() {
             Login
           </Link>
           <Link href="/register" className="btn btn-primary">
-            <span className="mr-2">🚀</span>
             Sign up
           </Link>
         </nav>
@@ -29,3 +28,4 @@ export default function Navbar() {
     </header>
   );
 }
+

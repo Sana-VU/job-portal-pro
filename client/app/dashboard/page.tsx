@@ -13,7 +13,7 @@ export default function DashboardPage() {
       setMe(meRes.data)
       if (meRes.data?.role === 'admin') {
         const { data } = await api.get('/jobs')
-        setJobs(data)
+        setJobs(data.items || [])
       }
     }
     run()
@@ -22,7 +22,7 @@ export default function DashboardPage() {
   const createJob = async () => {
     await api.post('/jobs', form, { withCredentials: true })
     const { data } = await api.get('/jobs')
-    setJobs(data)
+    setJobs(data.items || [])
   }
 
   if (!me) return <p>Loading...</p>

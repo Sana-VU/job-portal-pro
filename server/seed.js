@@ -10,6 +10,7 @@ const sampleJobs = [
   {
     title: "Senior Frontend Developer",
     company: "TechCorp Inc.",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop",
     location: "San Francisco, CA",
     salary: "$120,000 - $150,000",
     description:
@@ -23,6 +24,7 @@ const sampleJobs = [
   {
     title: "Full Stack Engineer",
     company: "StartupXYZ",
+    image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=800&q=80&auto=format&fit=crop",
     location: "New York, NY",
     salary: "$90,000 - $120,000",
     description:
@@ -36,6 +38,7 @@ const sampleJobs = [
   {
     title: "DevOps Engineer",
     company: "CloudTech Solutions",
+    image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&q=80&auto=format&fit=crop",
     location: "Austin, TX",
     salary: "$110,000 - $140,000",
     description:
@@ -49,6 +52,7 @@ const sampleJobs = [
   {
     title: "UI/UX Designer",
     company: "DesignStudio Pro",
+    image: "https://images.unsplash.com/photo-1559027615-5ee47b8d5130?w=800&q=80&auto=format&fit=crop",
     location: "Los Angeles, CA",
     salary: "$80,000 - $100,000",
     description:
@@ -62,6 +66,7 @@ const sampleJobs = [
   {
     title: "Data Scientist",
     company: "Analytics Corp",
+    image: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800&q=80&auto=format&fit=crop",
     location: "Seattle, WA",
     salary: "$130,000 - $160,000",
     description:
@@ -81,6 +86,7 @@ const sampleJobs = [
   {
     title: "Product Manager",
     company: "InnovateTech",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&auto=format&fit=crop",
     location: "Chicago, IL",
     salary: "$100,000 - $130,000",
     description:
@@ -100,6 +106,7 @@ const sampleJobs = [
   {
     title: "Backend Developer (Contract)",
     company: "FreelanceTech",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80&auto=format&fit=crop",
     location: "Remote",
     salary: "$60 - $80 per hour",
     description:
@@ -113,6 +120,7 @@ const sampleJobs = [
   {
     title: "Marketing Specialist",
     company: "GrowthCo",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80&auto=format&fit=crop",
     location: "Miami, FL",
     salary: "$50,000 - $70,000",
     description:

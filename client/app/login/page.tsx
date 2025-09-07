@@ -27,9 +27,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-slate-900 mb-2">
-            Welcome Back
-          </h1>
+          <h1 className="text-3xl font-bold text-slate-900 mb-2">Welcome Back</h1>
           <p className="text-slate-600">Sign in to your account to continue</p>
         </div>
 
@@ -44,9 +42,7 @@ export default function LoginPage() {
                 {...register("email", { required: "Email is required" })}
               />
               {errors.email && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.email.message}
-                </p>
+                <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
               )}
             </div>
 
@@ -59,9 +55,7 @@ export default function LoginPage() {
                 {...register("password", { required: "Password is required" })}
               />
               {errors.password && (
-                <p className="text-red-500 text-sm mt-1">
-                  {errors.password.message}
-                </p>
+                <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>
               )}
             </div>
 
@@ -73,25 +67,16 @@ export default function LoginPage() {
                   type="checkbox"
                   className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-slate-300 rounded"
                 />
-                <label
-                  htmlFor="remember-me"
-                  className="ml-2 block text-sm text-slate-700"
-                >
+                <label htmlFor="remember-me" className="ml-2 block text-sm text-slate-700">
                   Remember me
                 </label>
               </div>
-              <Link
-                href="#"
-                className="text-sm text-blue-600 hover:text-blue-500"
-              >
+              <Link href="#" className="text-sm text-blue-600 hover:text-blue-500">
                 Forgot password?
               </Link>
             </div>
 
-            <button className="btn btn-primary w-full" type="submit">
-              <span className="mr-2">🔐</span>
-              Sign In
-            </button>
+            <button className="btn btn-primary w-full" type="submit">Sign In</button>
           </form>
 
           <div className="mt-6">
@@ -100,30 +85,19 @@ export default function LoginPage() {
                 <div className="w-full border-t border-slate-300" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-slate-500">
-                  Or continue with
-                </span>
+                <span className="px-2 bg-white text-slate-500">Or continue with</span>
               </div>
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-3">
-              <button className="btn btn-outline">
-                <span className="mr-2">📧</span>
-                Google
-              </button>
-              <button className="btn btn-outline">
-                <span className="mr-2">💼</span>
-                LinkedIn
-              </button>
+              <button className="btn btn-outline">Google</button>
+              <button className="btn btn-outline">LinkedIn</button>
             </div>
           </div>
 
           <p className="mt-6 text-center text-sm text-slate-600">
             Don't have an account?{" "}
-            <Link
-              href="/register"
-              className="font-semibold text-blue-600 hover:text-blue-500"
-            >
+            <Link href="/register" className="font-semibold text-blue-600 hover:text-blue-500">
               Sign up for free
             </Link>
           </p>
@@ -132,3 +106,4 @@ export default function LoginPage() {
     </div>
   );
 }
+
